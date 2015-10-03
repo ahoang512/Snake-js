@@ -4,30 +4,34 @@
     <meta charset="utf-8">
     <title>SNAKE</title>
     <link rel="stylesheet" type="text/css" href="./lib/css/sss.css">
+    <script src="jquery-2.1.1.js"></script>
+     <script type="application/javascript" src="./vendor/keymaster.js"></script>
+
+     <script type="application/javascript" src="./lib/js/snake.js"></script>
+     <script type="application/javascript" src="./lib/js/coord.js"></script>
+     <script type="application/javascript" src="./lib/js/board.js"></script>
+     <script type="application/javascript" src="./lib/js/snake-view.js"></script>
 
   </head>
   <body>
-      <script src="jquery-2.1.1.js"></script>
-       <script type="application/javascript" src="./vendor/keymaster.js"></script>
+    <h1 class="title">Snake!</h1>
 
-       <script type="application/javascript" src="./lib/js/snake.js"></script>
-       <script type="application/javascript" src="./lib/js/coord.js"></script>
-       <script type="application/javascript" src="./lib/js/board.js"></script>
-       <script type="application/javascript" src="./lib/js/snake-view.js"></script>
+    <div class="container">
+      <ul class="grid">
 
+      </ul>
+    </div>
 
-          <div class="container">
-            <ul class="grid">
+    <script>
+      var board = new SSS.Board();
+      var view = new SSS.View(board, ".grid");
+      $(function() {
+        view.start();
+      });
+    </script>
 
-            </ul>
-          </div>
-
-          <script>
-            var board = new SSS.Board();
-            var view = new SSS.View(board, ".grid");
-            $(function() {
-              view.start();
-            });
-          </script>
+    <div class="credit">
+      Created By Anthony Hoang
+    </div>
   </body>
 </html>
