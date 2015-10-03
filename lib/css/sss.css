@@ -1,32 +1,32 @@
+.body {
+  margin: 0px;
+}
+
 .container {
-  position: relative;
-  align-content: center;
   margin: auto;
-  width: 50%;
-  padding: 0;
-  background: black;
+  width: 800px;
+  background: grey;
 }
 
 .grid{
-  width: 800px;
+  width: inherit;
   height: 800px;
-  /*margin: auto;*/
-  padding: 0;
-
-  background-color: lightgrey;
+  margin: 0px;
+  padding: 0px;
+  background: black;
 
 }
 
- li {
-   width: 38px;
-   height: 38px;
-   float: left;
-   list-style-type: none;
-   background-color: blue;
-   border: solid 1px black;
- }
+li {
+ width: 38px;
+ height: 38px;
+ float: left;
+ list-style-type: none;
+ background-color: blue;
+ border: solid 1px black;
+}
 
- 
+
 
 .snake {
   background: yellow;
