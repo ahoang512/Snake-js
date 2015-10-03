@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  align-content: center;
+  margin: auto;
+  width: 50%;
+  padding: 0;
+  background: black;
+}
+
+.grid{
+  width: 800px;
+  height: 800px;
+  /*margin: auto;*/
+  padding: 0;
+
+  background-color: lightgrey;
+
+}
+
+ li {
+   width: 38px;
+   height: 38px;
+   float: left;
+   list-style-type: none;
+   background-color: blue;
+   border: solid 1px black;
+ }
+
+ 
+
+.snake {
+  background: yellow;
+}
