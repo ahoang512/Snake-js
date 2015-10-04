@@ -64,3 +64,11 @@ li {
 
   border-radius:50%;
 }
+
+.gameOver {
+  background-color: yellow;
+}
+
+.food {
+  background-color: red;
+}
