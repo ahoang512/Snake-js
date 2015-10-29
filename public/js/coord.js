@@ -11,7 +11,7 @@
   };
 
   var equals = Coord.equals = function (src, dest) {
-    // body...
+    return (src[0] === dest[0]) && (src[1] === dest[1]);
   };
 
   var isOpposite = Coord.isOpposite = function (src, dest) {
@@ -23,7 +23,7 @@
   };
 
   var gameOver = Coord.gameOver = function(){
-    
+
   };
 
 

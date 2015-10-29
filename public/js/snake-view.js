@@ -105,7 +105,7 @@
     var segs = this.snake.segments;
     var tail = segs[segs.length - 1 ];
 
-    //get the head posiiton one snake has moved.
+    //get the head posiiton once snake has moved.
     var head = this.snake.move();
     var headPos = SSS.Coord.calcPos(head);
 

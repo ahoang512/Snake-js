@@ -26,13 +26,11 @@ Board.prototype.validMove = function (pos) {
     this.snake.gameOver = true;
     return false;
   }else{
-    var found = this.snake.segments.find(function(seg) {
-      return SSS.Coord.calcPos(pos).toString() === seg.toString();
-    });
-    if (typeof found !== 'undefined'){
-      //snake overlapped itself
-      this.snake.gameOver = true;
-      return false;
+    //check if it overlaps itself.
+    for (var i = 1; i < this.snake.segments.length; i++) {
+      if (SSS.Coord.equals(this.snake.segments[0], this.snake.segments[i])){
+        return false;
+      }
     }
   }
   return true;

@@ -22,6 +22,8 @@ body {
 .container {
   margin: auto;
   width: 800px;
+  background-image: url('../images/circle.jpg');
+  background-size: 800px 780px;
 }
 
 .grid{
@@ -29,7 +31,6 @@ body {
   height: 800px;
   margin: 0px;
   padding: 0px;
-  background: black;
 
 }
 
@@ -38,9 +39,9 @@ li {
  height: 20px;
  float: left;
  list-style-type: none;
- background-color: blue;
- outline: solid 1px;
- outline-color: darkcyan;
+ /*background-color: blue;*/
+ /*outline: solid 1px;*/
+ /*outline-color: darkcyan;*/
 }
 
 
