@@ -1,4 +1,7 @@
 # Snake-js
+
+If you want to demo try it here! http://ahoang-snake.herokuapp.com/
+
 Implementation of snake to practice javascript/jquery and some CSS.
 To demo go into root folder and open the index.html file in a browser.
 Use W,A,S,D to change directions.
