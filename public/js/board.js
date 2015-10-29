@@ -29,6 +29,7 @@ Board.prototype.validMove = function (pos) {
     //check if it overlaps itself.
     for (var i = 1; i < this.snake.segments.length; i++) {
       if (SSS.Coord.equals(this.snake.segments[0], this.snake.segments[i])){
+        this.snake.gameOver = true;
         return false;
       }
     }
