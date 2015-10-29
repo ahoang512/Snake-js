@@ -6,4 +6,5 @@ Use W,A,S,D to change directions.
 Screen Shot.
 ![alt text][logo]
 
-[logo]: http://res.cloudinary.com/dayd3nm4v/image/upload/v1445194046/Screen_Shot_2015-10-18_at_11.46.49_AM_trqifu.png
+
+[logo]: http://res.cloudinary.com/dayd3nm4v/image/upload/v1446142150/Screen_Shot_2015-10-29_at_11.02.06_AM_nxtlsl.png
