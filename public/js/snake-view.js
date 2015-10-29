@@ -16,9 +16,9 @@
   View.prototype.setupBoard = function () {
     var x = -1;
     var y = 0;
-    for (var i = 0; i < 400; i++) {
-      if (y === 400) {y = 0;}
-      if ( i % 20 === 0){
+    for (var i = 0; i < 1600; i++) {
+      if (y === 1600) {y = 0;}
+      if ( i % 40 === 0){
         x++;
       }
       var li = $("<li></li>");
@@ -135,7 +135,7 @@
     this.updateScore();
     SSS.Coord.timer = setInterval(function() {
       view.updateBoard();
-    }, 75);
+    }, 50);
   };
 
   View.prototype.updateScore = function () {

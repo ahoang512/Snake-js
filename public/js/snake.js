@@ -52,14 +52,14 @@
     this.dir = "s";
     this.segments = [[0,0]];
     this.score = 0;
-    
+
   };
 
   Snake.prototype.pause = function () {
     if (this.paused){
       SSS.Coord.timer = setInterval(function() {
         view.updateBoard();
-      }, 75);
+      }, 50);
       this.paused = false;
     }else {
       clearInterval(SSS.Coord.timer);

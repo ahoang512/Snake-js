@@ -11,9 +11,9 @@ var Board = SSS.Board = function() {
 };
 
 Board.prototype.fillGrid = function() {
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 40; i++) {
     this.grid.push([]);
-    for (var j = 0; j < 20; j++) {
+    for (var j = 0; j < 40; j++) {
       this.grid[i].push(".");
     }
   }
@@ -22,7 +22,7 @@ Board.prototype.fillGrid = function() {
 Board.prototype.validMove = function (pos) {
   var x = pos[0];
   var y = pos[1];
-  if (x < 0 || y < 0 || x > 19 || y > 19 ){
+  if (x < 0 || y < 0 || x > 39 || y > 39 ){
     this.snake.gameOver = true;
     return false;
   }else{
@@ -43,18 +43,17 @@ Board.prototype.placeFood = function() {
     $("li").eq(this.foodPos).removeClass("food");
   }
 
-  var x = Math.floor(Math.random() * 20);
-  var y = Math.floor(Math.random() * 20);
+  var x = Math.floor(Math.random() * 40);
+  var y = Math.floor(Math.random() * 40);
   var pos = SSS.Coord.calcPos([x,y]);
 
   var segPos = this.snake.segments.map(SSS.Coord.calcPos);
   while (segPos.indexOf(pos) !== -1) {
-    x = Math.floor(Math.random() * 20);
-    y = Math.floor(Math.random() * 20);
+    x = Math.floor(Math.random() * 40);
+    y = Math.floor(Math.random() * 40);
     pos = SSS.Coord.calcPos([x,y]);
   }
 
-  //debugger
   $("li").eq(pos).addClass("food");
   this.foodPos = pos;
   return pos;
